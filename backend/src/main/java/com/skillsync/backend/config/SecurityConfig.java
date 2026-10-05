@@ -80,6 +80,10 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.OPTIONS, "/**")
                         .permitAll()
 
+                        // Public service status endpoints
+                        .requestMatchers(HttpMethod.GET, "/", "/health")
+                        .permitAll()
+
                         // Login endpoint
                         .requestMatchers(
                                 HttpMethod.POST,
