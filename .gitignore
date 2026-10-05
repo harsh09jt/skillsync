@@ -1,0 +1,25 @@
+# Environment / API keys
+.env
+*.env
+!.env.example
+
+# Java
+target/
+**/target/
+
+# Node
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+
+# IDE
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
+__MACOSX/
+
+# Logs
+*.log
